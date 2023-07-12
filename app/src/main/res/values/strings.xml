@@ -6,6 +6,9 @@
     <string name="resenarestaurantes">
         Bienvenido/a a la seccion de restaurantes, encontraras una gran variedad, podras filtrar segun tus necesidades y escogeras¡la mejor opcion para ti!
     </string>
+    <string name="resenasitios">
+        Bienvenido/a a la seccion de sitios, encontraras una gran variedad, podras filtrar segun tus necesidades y escogeras¡la mejor opcion para ti!
+    </string>
     <string name="opcion1">Ingles</string>
     <string name="opcion2">Español</string>
     <string name="opcion3">Italiano</string>

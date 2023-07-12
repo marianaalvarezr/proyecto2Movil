@@ -25,6 +25,6 @@ MediaPlayer audio;
             }
         };
         Timer tiempo= new Timer();
-        tiempo.schedule(inicio, 10000);
+        tiempo.schedule(inicio, 8000);
     }
 }
