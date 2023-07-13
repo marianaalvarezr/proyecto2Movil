@@ -64,7 +64,8 @@ public class Home extends AppCompatActivity {
                 Toast.makeText(this, "quiero que este en italiano", Toast.LENGTH_SHORT).show();
                 break;
             case (R.id.opcion4):
-                Toast.makeText(this, "quiero ir a acerca de nosotros", Toast.LENGTH_SHORT).show();
+               Intent intent = new Intent(Home.this,Acerca.class);
+               startActivity(intent);
                 break;
         }
         return super.onOptionsItemSelected(item);

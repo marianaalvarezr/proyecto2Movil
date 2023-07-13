@@ -10,6 +10,10 @@
     <string name="resenasitios">
          Benvenuto nella sezione degli siti. Troverai una vasta gamma di opzioni qui. Puoi filtrare in base alle tue esigenze e scegliere la migliore opzione per te!
     </string>
+    <string name="usuariologin">Utente
+    </string>
+    <string name="passwordlogin">Parola d'ordine
+    </string>
     <string name="opcion1">Inglese</string>
     <string name="opcion2">Spagnolo</string>
     <string name="opcion3">Italiano</string>

@@ -10,6 +10,10 @@
     <string name="resenasitios">
        Welcome to the sites section. You will find a wide variety of options here. You can filter according to your needs and choose the best option for you!
     </string>
+    <string name="usuariologin">Username
+    </string>
+    <string name="passwordlogin">Password
+    </string>
     <string name="opcion1">English</string>
     <string name="opcion2">Spanish</string>
     <string name="opcion3">Italian</string>
