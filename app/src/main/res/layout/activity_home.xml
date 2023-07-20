@@ -23,7 +23,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.08"
-        android:text="¡HOLA!"
+        android:text="@string/bienvenidohome"
         android:textStyle="bold"
         android:textSize="22dp"
         android:textColor="@color/color2"
@@ -38,7 +38,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.1"
         android:backgroundTint="@color/color3"
-        android:text="HOTELES"
+        android:text="@string/boton1home"
         android:layout_marginHorizontal="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -50,7 +50,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.05"
         android:backgroundTint="@color/color5"
-        android:text="RESTAURANTES"
+        android:text="@string/boton2home"
         android:layout_marginHorizontal="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -62,7 +62,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.05"
         android:backgroundTint="@color/color4"
-        android:text="SITIOS"
+        android:text="@string/boton3home"
         android:layout_marginHorizontal="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

@@ -12,10 +12,17 @@
     </string>
     <string name="usuariologin">Utente
     </string>
-    <string name="passwordlogin">Parola d'ordine
+    <string name="passwordlogin">Parola dordine
     </string>
     <string name="opcion1">Inglese</string>
     <string name="opcion2">Spagnolo</string>
     <string name="opcion3">Italiano</string>
     <string name="opcion4">Su di noi</string>
+    <string name="bienvenidohome">Benvenuto</string>
+    <string name="ingresarlog">Cartello</string>
+    <string name="boton1home">Hoteles</string>
+    <string name="boton2home">Ristorant</string>
+    <string name="boton3home">Siti</string>
+    <string name="descripcionacerca">Ciao! Mi chiamo Mariana, ho 16 anni e attualmente sono una studentessa di Software Development e Interactive Design. Mi considero appassionato di imparare qualcosa di nuovo ogni giorno. Mi trovo molto bene nel campo della comunicazione e dellarte, mi piace affrontare le sfide, essere daiuto in ogni passo che faccio e cerco di avviare un grande cambiamento nella società con piccoli gesti.
+    </string>
 </resources>
