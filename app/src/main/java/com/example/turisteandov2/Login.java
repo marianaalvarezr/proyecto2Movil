@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 public class Login extends AppCompatActivity {
@@ -11,6 +13,7 @@ public class Login extends AppCompatActivity {
     //atributos
     EditText cajaUsuario;
     EditText cajaContrasena;
+    Button botoningresar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,17 +22,27 @@ public class Login extends AppCompatActivity {
         cajaContrasena=findViewById((R.id.contrasena));
 
         //capturando datos de los etittext
-        String nombreUsuario=cajaUsuario.getText().toString();
-        String contrasena=cajaContrasena.getText().toString();
+        cajaUsuario=findViewById(R.id.usuario);
+        cajaContrasena=findViewById(R.id.contrasena);
+        botoningresar=findViewById(R.id.botoningresar);
 
-        Intent intent=new Intent(Login.this,Home.class);
+        botoningresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String nombreUsuario=cajaUsuario.getText().toString();
+                String contrasena = cajaContrasena.getText().toString();
 
-        //pasando datos ala nueva actividad
+                Intent intent=new Intent(Login.this,Home.class);
 
-        intent.putExtra("nombre",nombreUsuario);
-        intent.putExtra("password",contrasena);
+                //pasando datos ala nueva actividad
 
-        startActivity(intent);
+                intent.putExtra("nombre",nombreUsuario);
+                intent.putExtra("password",contrasena);
+
+                startActivity(intent);
+            }
+        });
+
 
     }
 }
