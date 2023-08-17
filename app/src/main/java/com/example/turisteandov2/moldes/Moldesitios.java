@@ -1,31 +1,28 @@
 package com.example.turisteandov2.moldes;
 
-public class Moldehoteles {
+public class Moldesitios {
     private String nombre;
     private String precio;
     private String telefono;
+    private Integer foto;
     private Integer foto1;
     private Integer foto2;
     private Integer foto3;
     private Integer foto4;
-    private Integer foto5;
-    //todas las fotos son un entero (Integer)
 
-
-    public Moldehoteles() {
+    public Moldesitios() {
     }
 
-    public Moldehoteles(String nombre, String precio, String telefono, Integer foto1, Integer foto2, Integer foto3, Integer foto4, Integer foto5) {
+    public Moldesitios(String nombre, String precio, String telefono, Integer foto, Integer foto1, Integer foto2, Integer foto3, Integer foto4) {
         this.nombre = nombre;
         this.precio = precio;
         this.telefono = telefono;
+        this.foto = foto;
         this.foto1 = foto1;
         this.foto2 = foto2;
         this.foto3 = foto3;
         this.foto4 = foto4;
-        this.foto5 = foto5;
     }
-
 
     public String getNombre() {
         return nombre;
@@ -49,6 +46,14 @@ public class Moldehoteles {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
+    }
+
+    public Integer getFoto() {
+        return foto;
+    }
+
+    public void setFoto(Integer foto) {
+        this.foto = foto;
     }
 
     public Integer getFoto1() {
@@ -81,13 +86,5 @@ public class Moldehoteles {
 
     public void setFoto4(Integer foto4) {
         this.foto4 = foto4;
-    }
-
-    public Integer getFoto5() {
-        return foto5;
-    }
-
-    public void setFoto5(Integer foto5) {
-        this.foto5 = foto5;
     }
 }

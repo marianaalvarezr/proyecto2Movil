@@ -14,8 +14,9 @@
        app:layout_constraintBottom_toBottomOf="parent"
        android:text="Playa arcoíris"
        android:textStyle="bold"
-       android:textSize="26dp"
+       android:textSize="28dp"
        app:layout_constraintVertical_bias="0.05"
+       android:textColor="@color/color2"
       />
    <ImageView
        android:id="@+id/iamgen"
@@ -42,18 +43,73 @@
       />
 
    <TextView
+       android:id="@+id/platostitulo"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        app:layout_constraintTop_toTopOf="@+id/rango"
       app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintBottom_toBottomOf="parent"
-       android:text="Platos recomendados:"
+       android:text="Plato recomendado:"
        android:textStyle="bold"
        android:textSize="20dp"
        android:textColor="@color/color2"
        app:layout_constraintVertical_bias="0.1"
       />
+
+
+   <TextView
+       android:id="@+id/plato"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Robalo"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/platostitulo"
+       app:layout_constraintVertical_bias="0.02"
+       android:textSize="18dp"
+       />
+   <ImageView
+       android:id="@+id/imagenplato"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      app:layout_constraintTop_toTopOf="@+id/plato"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:src="@drawable/robalo"
+       app:layout_constraintWidth="200dp"
+       app:layout_constraintHeight="120dp"
+       app:layout_constraintVertical_bias="0.18"
+      />
+
+   <TextView
+       android:id="@+id/contacto"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Contacto:"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/platostitulo"
+       app:layout_constraintVertical_bias="0.6" />
+
+   <TextView
+       android:id="@+id/numerocontacto"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="3135138297"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/platostitulo"
+       app:layout_constraintVertical_bias="0.696" />
+
    <ImageView
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
