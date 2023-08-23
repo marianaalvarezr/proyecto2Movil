@@ -4,11 +4,11 @@ public class Moldesitios {
     private String nombre;
     private String precio;
     private String telefono;
-    private Integer foto;
     private Integer foto1;
     private Integer foto2;
     private Integer foto3;
     private Integer foto4;
+    private Integer foto5;
 
     public Moldesitios() {
     }
@@ -17,11 +17,11 @@ public class Moldesitios {
         this.nombre = nombre;
         this.precio = precio;
         this.telefono = telefono;
-        this.foto = foto;
-        this.foto1 = foto1;
-        this.foto2 = foto2;
-        this.foto3 = foto3;
-        this.foto4 = foto4;
+        this.foto1 = foto;
+        this.foto2 = foto1;
+        this.foto3 = foto2;
+        this.foto4 = foto3;
+        this.foto5 = foto4;
     }
 
     public String getNombre() {
@@ -46,14 +46,6 @@ public class Moldesitios {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
-    }
-
-    public Integer getFoto() {
-        return foto;
-    }
-
-    public void setFoto(Integer foto) {
-        this.foto = foto;
     }
 
     public Integer getFoto1() {
@@ -86,5 +78,13 @@ public class Moldesitios {
 
     public void setFoto4(Integer foto4) {
         this.foto4 = foto4;
+    }
+
+    public Integer getFoto5() {
+        return foto5;
+    }
+
+    public void setFoto5(Integer foto5) {
+        this.foto5 = foto5;
     }
 }

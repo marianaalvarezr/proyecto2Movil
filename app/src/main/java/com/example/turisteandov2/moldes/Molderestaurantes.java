@@ -3,7 +3,6 @@ package com.example.turisteandov2.moldes;
 public class Molderestaurantes {
     private String titulo;
     private String precio;
-    private String tituloplato;
     private String plato;
     private String telefono;
     private Integer foto;
@@ -12,10 +11,9 @@ public class Molderestaurantes {
     public Molderestaurantes() {
     }
 
-    public Molderestaurantes(String titulo, String precio, String tituloplato, String plato, String telefono, Integer foto, Integer fotoPlato) {
+    public Molderestaurantes(String titulo, String precio, String plato, String telefono, Integer foto, Integer fotoPlato) {
         this.titulo = titulo;
         this.precio = precio;
-        this.tituloplato = tituloplato;
         this.plato = plato;
         this.telefono = telefono;
         this.foto = foto;
@@ -36,14 +34,6 @@ public class Molderestaurantes {
 
     public void setPrecio(String precio) {
         this.precio = precio;
-    }
-
-    public String getTituloplato() {
-        return tituloplato;
-    }
-
-    public void setTituloplato(String tituloplato) {
-        this.tituloplato = tituloplato;
     }
 
     public String getPlato() {
