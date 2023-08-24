@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.turisteandov2.R;
-import com.example.turisteandov2.moldes.Moldehoteles;
+import com.example.turisteandov2.moldes.Molderestaurantes;
 import com.example.turisteandov2.moldes.Molderestaurantes;
 
 import java.util.ArrayList;
@@ -27,11 +27,13 @@ public class Adaptadorrestaurantes extends RecyclerView.Adapter<Adaptadorrestaur
     @Override
     public Adaptadorrestaurantes.viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View vista= LayoutInflater.from(parent.getContext()).inflate(R.layout.molderestaurante,null,false);
-        return new Adaptadorrestaurantes().viewHolder(vista);
+        return new viewHolder(vista);
     }
 
+
+
     @Override
-    public void onBindViewHolder(@NonNull Adaptadorhotel.viewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull Adaptadorrestaurantes.viewHolder holder, int position) {
         holder.actualizarDatos(listaRestaurantes.get(position));
 
     }

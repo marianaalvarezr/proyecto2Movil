@@ -51,23 +51,14 @@ public class Adaptadorhotel extends RecyclerView.Adapter<Adaptadorhotel.viewHold
 
     public class viewHolder extends RecyclerView.ViewHolder {
 
-        ImageView fotoHotel1;
-        ImageView fotoHotel2;
-        ImageView fotoHotel3;
-        ImageView fotoHotel4;
-        ImageView fotoHotel5;
+        ImageView fotoHotel;
         TextView nombreHotel;
         TextView precioHotel;
         TextView contactoHotel;
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            fotoHotel1=itemView.findViewById(R.id.fotolistahotel);
-            fotoHotel2=itemView.findViewById(R.id.foto1);
-            fotoHotel3=itemView.findViewById(R.id.foto2);
-            fotoHotel4=itemView.findViewById(R.id.foto3);
-            fotoHotel5=itemView.findViewById(R.id.foto4);
-
+            fotoHotel=itemView.findViewById(R.id.fotolistahotel);
 
             nombreHotel=itemView.findViewById(R.id.nombreListaHoteles);
             precioHotel=itemView.findViewById(R.id.precioListaHoteles);
@@ -76,11 +67,7 @@ public class Adaptadorhotel extends RecyclerView.Adapter<Adaptadorhotel.viewHold
         }
 
         public void actualizarDatos(Moldehoteles moldeHotel) {
-            fotoHotel1.setImageResource(moldeHotel.getFoto1());
-            fotoHotel2.setImageResource(moldeHotel.getFoto2());
-            fotoHotel3.setImageResource(moldeHotel.getFoto3());
-            fotoHotel4.setImageResource(moldeHotel.getFoto4());
-            fotoHotel5.setImageResource(moldeHotel.getFoto5());
+            fotoHotel.setImageResource(moldeHotel.getFoto());
             nombreHotel.setText(moldeHotel.getNombre());
             precioHotel.setText(moldeHotel.getPrecio());
             contactoHotel.setText(moldeHotel.getTelefono());

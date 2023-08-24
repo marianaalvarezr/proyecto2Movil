@@ -4,26 +4,19 @@ public class Moldehoteles {
     private String nombre;
     private String precio;
     private String telefono;
-    private Integer foto1;
-    private Integer foto2;
-    private Integer foto3;
-    private Integer foto4;
-    private Integer foto5;
+    private Integer foto;
+
     //todas las fotos son un entero (Integer)
 
 
     public Moldehoteles() {
     }
 
-    public Moldehoteles(String nombre, String precio, String telefono, Integer foto1, Integer foto2, Integer foto3, Integer foto4, Integer foto5) {
+    public Moldehoteles(String nombre, String precio, String telefono, Integer foto) {
         this.nombre = nombre;
         this.precio = precio;
         this.telefono = telefono;
-        this.foto1 = foto1;
-        this.foto2 = foto2;
-        this.foto3 = foto3;
-        this.foto4 = foto4;
-        this.foto5 = foto5;
+        this.foto = foto;
     }
 
 
@@ -51,43 +44,11 @@ public class Moldehoteles {
         this.telefono = telefono;
     }
 
-    public Integer getFoto1() {
-        return foto1;
+    public Integer getFoto() {
+        return foto;
     }
 
-    public void setFoto1(Integer foto1) {
-        this.foto1 = foto1;
-    }
-
-    public Integer getFoto2() {
-        return foto2;
-    }
-
-    public void setFoto2(Integer foto2) {
-        this.foto2 = foto2;
-    }
-
-    public Integer getFoto3() {
-        return foto3;
-    }
-
-    public void setFoto3(Integer foto3) {
-        this.foto3 = foto3;
-    }
-
-    public Integer getFoto4() {
-        return foto4;
-    }
-
-    public void setFoto4(Integer foto4) {
-        this.foto4 = foto4;
-    }
-
-    public Integer getFoto5() {
-        return foto5;
-    }
-
-    public void setFoto5(Integer foto5) {
-        this.foto5 = foto5;
+    public void setFoto(Integer foto) {
+        this.foto = foto;
     }
 }

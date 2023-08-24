@@ -11,55 +11,54 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.turisteandov2.R;
 import com.example.turisteandov2.moldes.Moldehoteles;
+import com.example.turisteandov2.moldes.Moldesitios;
 
 import java.util.ArrayList;
 
 public class Adaptadorsitios extends RecyclerView.Adapter<Adaptadorsitios.viewHolder>{
-    public ArrayList<Moldehoteles> ListaSitios;
+    public ArrayList<Moldesitios> ListaSitios;
 
-    public Adaptadorsitios(ArrayList<Moldehoteles> listaSitios) {
+    public Adaptadorsitios(ArrayList<Moldesitios> listaSitios) {
         this.ListaSitios = listaSitios;
     }
     @NonNull
     @Override
     public Adaptadorsitios.viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View vista= LayoutInflater.from(parent.getContext()).inflate(R.layout.moldesitios,null,false);
-        return new Adaptadorsitios().viewHolder(vista);
+        return new viewHolder(vista);
     }
 
     @Override
     public void onBindViewHolder(@NonNull Adaptadorsitios.viewHolder holder, int position) {
-        holder.actualizarDatos(listaitios.get(position));
+        holder.actualizarDatos(ListaSitios.get(position));
 
     }
 
     @Override
     public int getItemCount() {
-        return listasitios.size();
+        return ListaSitios.size();
     }
 
     public class viewHolder extends RecyclerView.ViewHolder {
 
-        ImageView fotoSitios1;
-        ImageView fotoSitios2;
-        ImageView fotoSitios3;
-        ImageView fotoSitios4;
-        ImageView fotoSitios5;
+        ImageView fotoSitios;
         TextView nombreSitio;
         TextView precioSitio;
         TextView contactoSitio;
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            fotoHotel1=itemView.findViewById(R.id.fotolistahotel);
-            fotoHotel2=itemView.findViewById(R.id.foto1);
-            fotoHotel3=itemView.findViewById(R.id.foto2);
-            fotoHotel4=itemView.findViewById(R.id.foto3);
-            fotoHotel5=itemView.findViewById(R.id.foto4);
+            fotoSitios=itemView.findViewById(R.id.fotoSitio);
 
+            nombreSitio=itemView.findViewById(R.id.titulomoldesitios);
+            precioSitio=itemView.findViewById(R.id.precioListasitios);
+            contactoSitio=itemView.findViewById(R.id.numeroContactoSitios);
 
-            nombreHotel=itemView.findViewById(R.id.nombreListaHoteles);
-            precioHotel=itemView.findViewById(R.id.precioListaHoteles);
-            contactoHotel=itemView.findViewById(R.id.numeroContacto);
+        }
+        public void actualizarDatos(Moldesitios moldeHotel) {
+            fotoSitios.setImageResource(moldeHotel.getFoto1());
+            nombreSitio.setText(moldeHotel.getNombre());
+            precioSitio.setText(moldeHotel.getPrecio());
+            contactoSitio.setText(moldeHotel.getTelefono());
 
         }
     }
