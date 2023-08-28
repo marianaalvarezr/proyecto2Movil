@@ -6,18 +6,16 @@ public class Molderestaurantes {
     private String plato;
     private String telefono;
     private Integer foto;
-    private Integer fotoPlato;
 
     public Molderestaurantes() {
     }
 
-    public Molderestaurantes(String titulo, String precio, String plato, String telefono, Integer foto, Integer fotoPlato) {
+    public Molderestaurantes(String titulo, String precio, String plato, String telefono, Integer foto) {
         this.titulo = titulo;
         this.precio = precio;
         this.plato = plato;
         this.telefono = telefono;
         this.foto = foto;
-        this.fotoPlato = fotoPlato;
     }
 
     public String getTitulo() {
@@ -60,12 +58,5 @@ public class Molderestaurantes {
         this.foto = foto;
     }
 
-    public Integer getFotoPlato() {
-        return fotoPlato;
-    }
-
-    public void setFotoPlato(Integer fotoPlato) {
-        this.fotoPlato = fotoPlato;
-    }
 }
 

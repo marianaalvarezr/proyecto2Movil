@@ -44,8 +44,7 @@ public class Adaptadorrestaurantes extends RecyclerView.Adapter<Adaptadorrestaur
     }
 
     public class viewHolder extends RecyclerView.ViewHolder {
-        ImageView fotoRestaurante1;
-        ImageView fotoRestaurante2;
+        ImageView fotoRestaurante;
         TextView nombreRestaurante;
         TextView plato;
         TextView precio;
@@ -53,10 +52,7 @@ public class Adaptadorrestaurantes extends RecyclerView.Adapter<Adaptadorrestaur
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            fotoRestaurante1 = itemView.findViewById(R.id.fotoRestaurante);
-            fotoRestaurante2 = itemView.findViewById(R.id.imagenplato);
-
-
+            fotoRestaurante = itemView.findViewById(R.id.fotoRestaurante);
             nombreRestaurante = itemView.findViewById(R.id.tituloRestaurante);
             plato = itemView.findViewById(R.id.plato);
             precio = itemView.findViewById(R.id.rangoPlato);
@@ -64,8 +60,7 @@ public class Adaptadorrestaurantes extends RecyclerView.Adapter<Adaptadorrestaur
         }
 
         public void actualizarDatos(Molderestaurantes molderestaurantes) {
-            fotoRestaurante1.setImageResource(molderestaurantes.getFoto());
-            fotoRestaurante2.setImageResource(molderestaurantes.getFotoPlato());
+            fotoRestaurante.setImageResource(molderestaurantes.getFoto());
             nombreRestaurante.setText(molderestaurantes.getTitulo());
             plato.setText(molderestaurantes.getPlato());
             precio.setText(molderestaurantes.getPrecio());

@@ -4,123 +4,102 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-   <TextView
-       android:id="@+id/tituloRestaurante"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
+   <ImageView
+       android:id="@+id/fotoRestaurante"
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
        app:layout_constraintTop_toTopOf="parent"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintBottom_toBottomOf="parent"
-       android:text="Playa arcoíris"
-       android:textStyle="bold"
-       android:textSize="28dp"
-       app:layout_constraintVertical_bias="0.05"
-       android:textColor="@color/color2"
-      />
-   <ImageView
-       android:id="@+id/fotoRestaurante"
-       android:layout_width="350dp"
-       android:layout_height="250dp"
-       app:layout_constraintTop_toBottomOf="@+id/tituloRestaurante"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintBottom_toBottomOf="parent"
        android:src="@drawable/playaarcoiris"
-       app:layout_constraintVertical_bias="0.05"
+       android:scaleType="fitXY"
+       app:layout_constraintVertical_bias="0"
        />
+
+   <TextView
+       android:id="@+id/tituloRestaurante"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Playa Arcoiris"
+       android:textColor="@color/color2"
+       android:textSize="20dp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.497"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/fotoRestaurante"
+       app:layout_constraintVertical_bias="0.0" />
+
    <TextView
        android:id="@+id/rangoPlato"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-      app:layout_constraintTop_toTopOf="@+id/fotoRestaurante"
+       android:text="$10000-$40000"
+       android:textSize="16dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.045"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintBottom_toBottomOf="parent"
-       android:text="$10.000 - $40.000"
-       android:textSize="20dp"
-       app:layout_constraintVertical_bias="0.45"
-      />
+       app:layout_constraintTop_toBottomOf="@+id/tituloRestaurante"
+       app:layout_constraintVertical_bias="0.0" />
 
-   <TextView
-       android:id="@+id/platostitulo"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       app:layout_constraintTop_toTopOf="@+id/rangoPlato"
-      app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintBottom_toBottomOf="parent"
-       android:text="@string/platorecomendado"
-       android:textStyle="bold"
-       android:textSize="20dp"
-       android:textColor="@color/color2"
-       app:layout_constraintVertical_bias="0.1"
-      />
-
-
-   <TextView
-       android:id="@+id/plato"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Robalo"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.498"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/platostitulo"
-       app:layout_constraintVertical_bias="0.02"
-       android:textSize="18dp"
-       />
-   <ImageView
-       android:id="@+id/imagenplato"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-      app:layout_constraintTop_toTopOf="@+id/plato"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintBottom_toBottomOf="parent"
-       android:src="@drawable/robalo"
-       app:layout_constraintWidth="200dp"
-       app:layout_constraintHeight="120dp"
-       app:layout_constraintVertical_bias="0.18"
-      />
 
    <TextView
        android:id="@+id/contacto"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:text="@string/contacto"
+       android:textSize="16dp"
        android:textStyle="bold"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintHorizontal_bias="0.529"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/platostitulo"
-       app:layout_constraintVertical_bias="0.6" />
+       app:layout_constraintTop_toBottomOf="@+id/tituloRestaurante"
+       app:layout_constraintVertical_bias="0.0" />
 
    <TextView
        android:id="@+id/numerocontactoRestaurante"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:text="3135138297"
+       android:text="3135138967"
+       android:textSize="16dp"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintHorizontal_bias="0.919"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/platostitulo"
-       app:layout_constraintVertical_bias="0.696" />
+       app:layout_constraintTop_toBottomOf="@+id/tituloRestaurante"
+       app:layout_constraintVertical_bias="0.0" />
 
-   <ImageView
+   <TextView
+       android:id="@+id/platostitulo"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
+       android:text="@string/platorecomendado"
+       android:textColor="@color/color2"
+       android:textSize="18dp"
+       android:textStyle="bold"
        app:layout_constraintBottom_toBottomOf="parent"
-       android:src="@drawable/bannerrestaur"
-       app:layout_constraintVertical_bias="1"
-       app:layout_constraintWidth="800dp"
-       app:layout_constraintHeight="35dp"
-       />
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.05"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="@+id/rangoPlato"
+       app:layout_constraintVertical_bias="0.072" />
+
+   <TextView
+       android:id="@+id/plato"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Robalo"
+       android:textSize="16dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.468"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.369" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
