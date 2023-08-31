@@ -27,4 +27,6 @@
     </string>
     <string name="contacto">Contact</string>
     <string name="platorecomendado">Recomended dish</string>
+    <string name="precio">Price</string>
+    <string name="reservar">¡Reserve!</string>
 </resources>

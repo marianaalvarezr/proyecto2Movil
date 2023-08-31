@@ -1,5 +1,6 @@
 package com.example.turisteandov2.adaptadores;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.turisteandov2.AmpliandoHotel;
+import com.example.turisteandov2.AmpliandoSitios;
 import com.example.turisteandov2.R;
 import com.example.turisteandov2.moldes.Moldehoteles;
 import com.example.turisteandov2.moldes.Moldesitios;
@@ -54,11 +57,20 @@ public class Adaptadorsitios extends RecyclerView.Adapter<Adaptadorsitios.viewHo
             contactoSitio=itemView.findViewById(R.id.numeroContactoSitios);
 
         }
-        public void actualizarDatos(Moldesitios moldeHotel) {
-            fotoSitios.setImageResource(moldeHotel.getFoto1());
-            nombreSitio.setText(moldeHotel.getNombre());
-            precioSitio.setText(moldeHotel.getPrecio());
-            contactoSitio.setText(moldeHotel.getTelefono());
+        public void actualizarDatos(Moldesitios moldesitios) {
+            fotoSitios.setImageResource(moldesitios.getFoto1());
+            nombreSitio.setText(moldesitios.getNombre());
+            precioSitio.setText(moldesitios.getPrecio());
+            contactoSitio.setText(moldesitios.getTelefono());
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent= new Intent(itemView.getContext(), AmpliandoSitios.class);
+                    intent.putExtra("datossitios",moldesitios);
+                    itemView.getContext().startActivity(intent);
+                }
+            });
 
         }
     }
