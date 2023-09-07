@@ -29,4 +29,7 @@
     <string name="platorecomendado">Piatto consigliato</string>
     <string name="precio">Prezzo</string>
     <string name="reservar">¡Riserva!</string>
+    <string name="descripcionhotel1">Un lussuoso hotel fronte mare con camere eleganti, vista panoramica, cucina squisita e servizi di prima classe per un relax indimenticabile.</string>
+    <string name="calificacion">Calificacion</string>
+
 </resources>

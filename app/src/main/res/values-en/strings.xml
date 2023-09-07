@@ -29,4 +29,7 @@
     <string name="platorecomendado">Recomended dish</string>
     <string name="precio">Price</string>
     <string name="reservar">¡Reserve!</string>
+    <string name="descripcionhotel1">A luxurious beachfront hotel with elegant rooms, panoramic views, exquisite cuisine and first-class services for unforgettable relaxation.</string>
+    <string name="calificacion">Rate</string>
+
 </resources>

@@ -29,8 +29,8 @@ public class ListaHoteles extends AppCompatActivity {
         recyclerView.setAdapter(adaptadorHoteles);
     }
     public void llenarListaConDatos(){
-        listaHoteles.add(new Moldehoteles("Hotel Wayira Beach", "$100000","3135138297",R.drawable.wayirahotel, "Un lujoso hotel frente al mar con habitaciones elegantes, vistas panorámicas, gastronomía exquisita y servicios de primera clase para relajación inolvidable."));
-        //listaHoteles.add(new Moldehoteles("Rancheria Utta", "$90000","3235138298",R.drawable.rancheriautta));
+        listaHoteles.add(new Moldehoteles("Hotel Wayira Beach", "$100000","3135138297",R.drawable.wayiraampliando, "Un lujoso hotel frente al mar con habitaciones elegantes, vistas panorámicas, gastronomía exquisita y servicios de primera clase para relajación inolvidable.",R.drawable.wayirahotel,R.drawable.wayira3,"Es un hotel muy agradable con muchas alternativas y perfecto para la familia","5/5"));
+        listaHoteles.add(new Moldehoteles("Rancheria Utta", "$90000","3235138298",R.drawable.rancheriautta, "Un encantador refugio, con cabañas rústicas, gastronomía espectacular, playas vírgenes, atardeceres espectaculares y auténtica hospitalidad local.",R.drawable.rancheria1, R.drawable.rancheria2, "Un hotel que sin duda te hace vivir una experiencia inmersiva.", "4.5/5"));
         //listaHoteles.add(new Moldehoteles("Hotel Playa Arcoiris", "$800000","3175138291",R.drawable.playaarcoiris));
         //listaHoteles.add(new Moldehoteles("Hotel Palomino Sunrise", "$120000","3235138280",R.drawable.palominosunrise));
         //listaHoteles.add(new Moldehoteles("Hotel Casa coraje", "$950000","3145138197",R.drawable.casacoraje));
