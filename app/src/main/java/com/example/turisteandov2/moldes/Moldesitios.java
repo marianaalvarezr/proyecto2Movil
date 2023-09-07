@@ -43,7 +43,7 @@ public class Moldesitios implements Serializable {
         this.telefono = telefono;
     }
 
-    public Integer getFoto1() {
+    public Integer getFoto() {
         return foto;
     }
 

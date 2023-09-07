@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".AmpliandoSitios">
     <TextView
-        android:id="@+id/titulositios1"
+        android:id="@+id/titulositiosampliando"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,10 +20,10 @@
         app:layout_constraintVertical_bias="0.05"
         />
     <ImageView
-        android:id="@+id/fotositios1"
+        android:id="@+id/fotositiosampliando"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulositios1"
+        app:layout_constraintTop_toBottomOf="@+id/titulositiosampliando"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,6 +34,7 @@
         />
 
     <TextView
+        android:id="@+id/numerositiosampliando"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="313513897"
@@ -57,7 +58,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.307"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fotositios1"
+        app:layout_constraintTop_toBottomOf="@+id/fotositiosampliando"
         app:layout_constraintVertical_bias="0.02" />
     <TextView
         android:id="@+id/preciotitulo"
@@ -71,11 +72,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.722"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fotositios1"
+        app:layout_constraintTop_toBottomOf="@+id/fotositiosampliando"
         app:layout_constraintVertical_bias="0.022" />
 
     <TextView
-        android:id="@+id/preciositios1"
+        android:id="@+id/preciositiosampliando"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="$100.000"
@@ -100,7 +101,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/preciositios1"
+        app:layout_constraintTop_toBottomOf="@+id/preciositiosampliando"
         app:layout_constraintVertical_bias="0.1" />
 
     <ImageView
@@ -111,10 +112,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="60dp"
-        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/descripcionsitios"
-        app:layout_constraintVertical_bias="0.084"
+        app:layout_constraintVertical_bias="0.067"
         app:layout_constraintWidth="140dp" />
 
     <ImageView
@@ -128,7 +129,7 @@
         app:layout_constraintHorizontal_bias="0.614"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/descripcionsitios"
-        app:layout_constraintVertical_bias="0.089"
+        app:layout_constraintVertical_bias="0.073"
         app:layout_constraintWidth="110dp" />
 
     <ImageView
@@ -142,7 +143,7 @@
         app:layout_constraintHorizontal_bias="0.912"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/descripcionsitios"
-        app:layout_constraintVertical_bias="0.125"
+        app:layout_constraintVertical_bias="0.111"
         app:layout_constraintWidth="70dp" />
 
     <ImageView
@@ -156,7 +157,7 @@
         app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/descripcionsitios"
-        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintVertical_bias="0.466"
         app:layout_constraintWidth="140dp" />
 
     <ImageView
@@ -170,8 +171,9 @@
         app:layout_constraintHorizontal_bias="0.614"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/descripcionsitios"
-        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintVertical_bias="0.466"
         app:layout_constraintWidth="110dp" />
+
     <Button
         android:id="@+id/botonreservarsitios"
         android:layout_width="match_parent"

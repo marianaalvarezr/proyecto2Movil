@@ -58,7 +58,7 @@ public class Adaptadorsitios extends RecyclerView.Adapter<Adaptadorsitios.viewHo
 
         }
         public void actualizarDatos(Moldesitios moldesitios) {
-            fotoSitios.setImageResource(moldesitios.getFoto1());
+            fotoSitios.setImageResource(moldesitios.getFoto());
             nombreSitio.setText(moldesitios.getNombre());
             precioSitio.setText(moldesitios.getPrecio());
             contactoSitio.setText(moldesitios.getTelefono());

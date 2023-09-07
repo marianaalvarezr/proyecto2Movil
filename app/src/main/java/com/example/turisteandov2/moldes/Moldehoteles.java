@@ -7,6 +7,8 @@ public class Moldehoteles implements Serializable {
     private String precio;
     private String telefono;
     private Integer foto;
+    private String descripcion;
+
 
     //todas las fotos son un entero (Integer)
 
@@ -14,13 +16,13 @@ public class Moldehoteles implements Serializable {
     public Moldehoteles() {
     }
 
-    public Moldehoteles(String nombre, String precio, String telefono, Integer foto) {
+    public Moldehoteles(String nombre, String precio, String telefono, Integer foto, String descripcion) {
         this.nombre = nombre;
         this.precio = precio;
         this.telefono = telefono;
         this.foto = foto;
+        this.descripcion = descripcion;
     }
-
 
     public String getNombre() {
         return nombre;
@@ -52,5 +54,13 @@ public class Moldehoteles implements Serializable {
 
     public void setFoto(Integer foto) {
         this.foto = foto;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 }

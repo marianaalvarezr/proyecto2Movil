@@ -19,7 +19,6 @@ public class ListaRestaurantes extends AppCompatActivity {
     ArrayList<Molderestaurantes> listaRestaurantes =new ArrayList<>();
     RecyclerView recyclerView;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class ListaSitios extends AppCompatActivity {
     ArrayList<Moldesitios> listaSitios=new ArrayList<>();
     RecyclerView recyclerView;
-    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
