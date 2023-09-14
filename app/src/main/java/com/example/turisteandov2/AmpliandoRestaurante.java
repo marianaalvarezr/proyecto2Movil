@@ -11,6 +11,8 @@ import android.widget.Toast;
 import com.example.turisteandov2.moldes.Moldehoteles;
 import com.example.turisteandov2.moldes.Molderestaurantes;
 
+import org.w3c.dom.Text;
+
 public class AmpliandoRestaurante extends AppCompatActivity {
 
     Molderestaurantes molderestaurantes;
@@ -19,6 +21,11 @@ public class AmpliandoRestaurante extends AppCompatActivity {
     TextView numeroApmliandoRest;
     TextView precioAmpliandoRest;
     TextView platorecomendado;
+    TextView descripcionAmpliandoRest;
+    ImageView fotoAmpliandoRest2;
+    ImageView fotoAmpliandoRest3;
+    TextView calificacionAmpliandoRest;
+    TextView comentarioAmpliandoRest;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -30,6 +37,11 @@ public class AmpliandoRestaurante extends AppCompatActivity {
         numeroApmliandoRest=findViewById(R.id.numerorestampliando);
         precioAmpliandoRest=findViewById(R.id.preciorestampliando);
         platorecomendado=findViewById(R.id.platorecomendado);
+        descripcionAmpliandoRest=findViewById(R.id.descripcionrestampliando);
+        fotoAmpliandoRest2=findViewById(R.id.imagenrest1);
+        fotoAmpliandoRest3=findViewById(R.id.imagenrest2);
+        calificacionAmpliandoRest=findViewById(R.id.calificaionampliandorest);
+        comentarioAmpliandoRest=findViewById(R.id.comentarioampliandorest);
         molderestaurantes =(Molderestaurantes)getIntent().getSerializableExtra("datosrestaurantes");
 
         fotoAmpliandoRest.setImageResource(molderestaurantes.getFoto());
@@ -37,5 +49,10 @@ public class AmpliandoRestaurante extends AppCompatActivity {
         numeroApmliandoRest.setText(molderestaurantes.getTelefono());
         precioAmpliandoRest.setText(molderestaurantes.getPrecio());
         platorecomendado.setText(molderestaurantes.getPlato());
+        descripcionAmpliandoRest.setText(molderestaurantes.getDescripcion());
+        fotoAmpliandoRest2.setImageResource(molderestaurantes.getFoto2());
+        fotoAmpliandoRest3.setImageResource(molderestaurantes.getFoto3());
+        calificacionAmpliandoRest.setText(molderestaurantes.getCalificacion());
+        comentarioAmpliandoRest.setText(molderestaurantes.getComentario());
     }
 }

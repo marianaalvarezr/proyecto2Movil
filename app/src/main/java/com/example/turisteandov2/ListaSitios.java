@@ -31,10 +31,10 @@ public class ListaSitios extends AppCompatActivity {
     }
 
     private void llenarListaConDatos() {
-       listaSitios.add(new Moldesitios("Pilon de azucar", "$100000","3135138297",R.drawable.pilon));
-       listaSitios.add(new Moldesitios("Playa ojo de agua", "$90000","3145188291",R.drawable.ojodeagua));
-       listaSitios.add(new Moldesitios("El faro", "$50000","3205138292",R.drawable.elfaro));
-       listaSitios.add(new Moldesitios("Punta gallinas", "$110000","3035168257",R.drawable.puntagallinas));
-       listaSitios.add(new Moldesitios("Parque Nacional Natural Macuira", "$150000","3115138290",R.drawable.macuira));
+       listaSitios.add(new Moldesitios("Pilon de azucar", "$100000","3135138297",R.drawable.pilon,"Pilón de Azúcar, un icónico faro en La Guajira, se alza majestuosamente en un paisaje desértico, guiando a los navegantes con su luz centenaria.",R.drawable.pilondeazucar1,R.drawable.pilondeazucar2,"Un lugar con paisajes maravillosos","5/5"));
+       listaSitios.add(new Moldesitios("Playa ojo de agua", "$90000","3145188291",R.drawable.ojodeagua,"La Playa del Ojo del Agua en La Guajira es un paraíso escondido, donde aguas cristalinas acarician arenas doradas bajo un cielo infinito.",R.drawable.ojodelaguaa, R.drawable.ojodelaguaaa,"Muy bonito lugar, aunque hay mucha gente","4/5"));
+       listaSitios.add(new Moldesitios("El faro", "$50000","3205138292",R.drawable.elfaro, "El Faro de La Guajira es una estructura imponente que emerge en medio del paisaje desértico, guiando a los marinos con su luz constante.",R.drawable.elfaroo,R.drawable.elfarooo,"Un lugar muy concorrido y de dificil acceso, sin embargo, la vista es bonita", "3/5"));
+       listaSitios.add(new Moldesitios("Punta gallinas", "$110000","3035168257",R.drawable.puntagallinas,"Punta Gallinas, en La Guajira, es el punto más septentrional de América del Sur, un paraíso remoto de playas, dunas y paisajes asombrosos.",R.drawable.puntaallinass,R.drawable.puntagallinasss,"Punta Gallinas es un rincón mágico en La Guajira, super recomendado", "5/5"));
+       listaSitios.add(new Moldesitios("Parque Nacional Natural Macuira", "$150000","3115138290",R.drawable.macuira,"El Parque Nacional Natural Macuira, en La Guajira, es un tesoro ecológico con desiertos, montañas, oasis y una biodiversidad única que encanta a los aventureros.",R.drawable.parque1,R.drawable.parque2,"Un lugar que retrata lo bonito de la naturaleza","5/5"));
     }
 }

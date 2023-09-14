@@ -124,7 +124,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginBottom="252dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"
+        android:text="@string/descripcionrestaurante"
         android:textAlignment="textStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -133,46 +133,118 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imagenrest2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/fotorest2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight="80dp"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/descripcionrestampliando"
-        app:layout_constraintVertical_bias="0.142"
-        app:layout_constraintWidth="110dp" />
-
-    <ImageView
         android:id="@+id/imagenrest1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/fotorest1"
+        android:src="@drawable/rest1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight="80dp"
-        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintHeight="60dp"
+        app:layout_constraintHorizontal_bias="0.195"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/descripcionrestampliando"
-        app:layout_constraintVertical_bias="0.142"
-        app:layout_constraintWidth="110dp" />
+        app:layout_constraintVertical_bias="0.103"
+        app:layout_constraintWidth="140dp" />
 
     <ImageView
-        android:id="@+id/imagenrest3"
+        android:id="@+id/imagenrest2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/fotorest3"
+        android:src="@drawable/rest2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight="80dp"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHeight="60dp"
+        app:layout_constraintHorizontal_bias="0.784"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/descripcionrestampliando"
-        app:layout_constraintVertical_bias="0.142"
+        app:layout_constraintVertical_bias="0.103"
         app:layout_constraintWidth="110dp" />
+
+    <TextView
+        android:id="@+id/comentarioampliandorest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="40dp"
+        android:text="Es un hrestaurante con comida muy rica"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toEndOf="@+id/iconoperfil"
+        app:layout_constraintTop_toBottomOf="@+id/imagenrest1"
+        app:layout_constraintVertical_bias="0.161" />
+
+    <ImageView
+        android:id="@+id/iconoperfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/perfilamarillo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="60dp"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenrest1"
+        app:layout_constraintVertical_bias="0.112"
+        app:layout_constraintWidth="60dp" />
+
+    <ImageView
+        android:id="@+id/comillas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/comillasamarillas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="20dp"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenrest1"
+        app:layout_constraintVertical_bias="0.151"
+        app:layout_constraintWidth="20dp" />
+
+
+    <TextView
+        android:id="@+id/calificaciontitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calificacion"
+        android:textColor="@color/color2"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconoperfil"
+        app:layout_constraintVertical_bias="0.124" />
+
+    <ImageView
+        android:id="@+id/estrellas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/estrellas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="50dp"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comillas"
+        app:layout_constraintVertical_bias="0.239"
+        app:layout_constraintWidth="50dp" />
+
+    <TextView
+        android:id="@+id/calificaionampliandorest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5/5"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comentarioampliandorest"
+        app:layout_constraintVertical_bias="0.297" />
 
     <Button
         android:id="@+id/botonreservarrest"
@@ -186,7 +258,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagenrest1"
+        app:layout_constraintTop_toBottomOf="@+id/calificaciontitulo"
         app:layout_constraintVertical_bias="0.34" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -90,103 +90,145 @@
 
 
     <TextView
-        android:id="@+id/descripcionsitios"
+        android:id="@+id/descripcionsitiosampliando"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"
+        android:text="Pilón de Azúcar, un icónico faro en La Guajira, se alza majestuosamente en un paisaje desértico, guiando a los navegantes con su luz centenaria."
         android:textAlignment="textStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/preciositiosampliando"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.058" />
 
     <ImageView
         android:id="@+id/imagensitios1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/wayirahotel"
+        android:src="@drawable/pilondeazucar1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="60dp"
-        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintHorizontal_bias="0.195"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/descripcionsitios"
-        app:layout_constraintVertical_bias="0.067"
+        app:layout_constraintTop_toBottomOf="@id/descripcionsitiosampliando"
+        app:layout_constraintVertical_bias="0.103"
         app:layout_constraintWidth="140dp" />
 
     <ImageView
         android:id="@+id/imagensitios2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/wayira2"
+        android:src="@drawable/pilondeazucar2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="60dp"
-        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintHorizontal_bias="0.784"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/descripcionsitios"
-        app:layout_constraintVertical_bias="0.073"
+        app:layout_constraintTop_toBottomOf="@id/descripcionsitiosampliando"
+        app:layout_constraintVertical_bias="0.103"
         app:layout_constraintWidth="110dp" />
 
-    <ImageView
-        android:id="@+id/imagensitios3"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/comentarioampliandositios"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/wayira5"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="40dp"
+        android:text="Un lugar con paisajes maravillosos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight="130dp"
-        app:layout_constraintHorizontal_bias="0.912"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/descripcionsitios"
-        app:layout_constraintVertical_bias="0.111"
-        app:layout_constraintWidth="70dp" />
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toEndOf="@+id/iconoperfil"
+        app:layout_constraintTop_toBottomOf="@+id/imagensitios1"
+        app:layout_constraintVertical_bias="0.156" />
 
     <ImageView
-        android:id="@+id/imagensitios4"
+        android:id="@+id/iconoperfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/wayira1"
+        android:src="@drawable/perfilazul"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight="60dp"
-        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintHorizontal_bias="0.076"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/descripcionsitios"
-        app:layout_constraintVertical_bias="0.466"
-        app:layout_constraintWidth="140dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imagensitios1"
+        app:layout_constraintVertical_bias="0.112"
+        app:layout_constraintWidth="60dp" />
+
 
     <ImageView
-        android:id="@+id/imagensitios5"
+        android:id="@+id/comillas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/wayira3"
+        android:src="@drawable/comillasazules"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight="60dp"
-        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintHeight="20dp"
+        app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/descripcionsitios"
-        app:layout_constraintVertical_bias="0.466"
-        app:layout_constraintWidth="110dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imagensitios1"
+        app:layout_constraintVertical_bias="0.157"
+        app:layout_constraintWidth="20dp" />
+
+    <TextView
+        android:id="@+id/calificaciontitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calificacion"
+        android:textColor="@color/color3"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconoperfil"
+        app:layout_constraintVertical_bias="0.124" />
+
+    <ImageView
+        android:id="@+id/estrellas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/estrellasazules"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="50dp"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comillas"
+        app:layout_constraintVertical_bias="0.239"
+        app:layout_constraintWidth="50dp" />
+
+    <TextView
+        android:id="@+id/calificaionampliandositios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5/5"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comentarioampliandositios"
+        app:layout_constraintVertical_bias="0.299" />
 
     <Button
         android:id="@+id/botonreservarsitios"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/imagensitios5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginHorizontal="30dp"
-        app:layout_constraintVertical_bias="0.3"
         android:backgroundTint="@color/color3"
         android:text="@string/reservar"
-        android:textStyle="bold"
         android:textColor="@color/color4"
-        />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconoperfil"
+        app:layout_constraintVertical_bias="0.569" />
 </androidx.constraintlayout.widget.ConstraintLayout>

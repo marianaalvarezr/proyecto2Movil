@@ -10,7 +10,8 @@
     <string name="resenasitios">
          Benvenuto nella sezione degli siti. Troverai una vasta gamma di opzioni qui. Puoi filtrare in base alle tue esigenze e scegliere la migliore opzione per te!
     </string>
-    <string name="usuariologin">Utente
+    <string name="usuariologin">
+        Utente
     </string>
     <string name="passwordlogin">Parola dordine
     </string>
@@ -31,5 +32,5 @@
     <string name="reservar">¡Riserva!</string>
     <string name="descripcionhotel1">Un lussuoso hotel fronte mare con camere eleganti, vista panoramica, cucina squisita e servizi di prima classe per un relax indimenticabile.</string>
     <string name="calificacion">Calificacion</string>
-
+    <string name="descripcionrestaurante">Un ristorante a La Guajira che fonde i sapori autoctoni con la creatività, offrendo piatti freschi e un esperienza gastronomica culturale unica.</string>
 </resources>
