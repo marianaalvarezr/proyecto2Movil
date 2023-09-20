@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "98192276245",
+    "project_id": "turisteandomar",
+    "storage_bucket": "turisteandomar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98192276245:android:5445c73d9a6b48bd8d471c",
+        "android_client_info": {
+          "package_name": "com.example.turisteandov2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK2mrfmdXgGxXdQITks-mWcT_GUwQ-CN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
